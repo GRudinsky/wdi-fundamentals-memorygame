@@ -20,7 +20,7 @@ main {
   max-width: 850px;
   margin: 35px auto;
 }
-h1, h2, a {
+h1, h2, a, h2 span, button {
   font-family: raleway;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -35,12 +35,10 @@ h1 {
   margin: 0;
 }
 
-h2 {
+h2, button {
   font-size: 20px;
 }
-ul {
 
-}
 li {
   display: inline;
 }
@@ -61,6 +59,12 @@ p {
 }
 img {
   margin: 40px 8px 0 8px;
+}
+button {
+  height: 60px;
+  width: 350px;
+  border: 2px solid #00A6B3;
+  border-radius: 7px;
 }
 footer {
   text-transform: uppercase;
