@@ -13,18 +13,26 @@
   </header>
   <nav>
     <a href="#instructions-area">Instructions</a>
-    <a href="#play-area">Game</a>
+    <a href="#game-board">Game</a>
   </nav>
   <main>
     <div id="instructions-area">
       <h2>Instructions</h2>
       <p>Concentration, also known as Match Match, Match Up, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
     </div>
-      <div id="play-area">
+      <!-- <div id="play-area">
         <img src="images/back.png" alt="Queen of Diamonds">
         <img src="images/back.png" alt="Queen of Hearts">
         <img src="images/back.png" alt="King of Diamonds">
         <img src="images/back.png" alt="King of Hearts">
+      </div> -->
+      <div id="game-board" class="board-clearfix">
+      </div>
+      <!-- Extra score and reset button section -->
+      <div id="score-card">
+        <h2> Games Won: <span id="games-won" class="name">0</span> Games Lost: <span id="games-lost" class="name">0</span></h2>
+        <button id="reset-button">Reset Game</button>
+
       </div>
   </main>
   <footer class="clearfix">
