@@ -65,6 +65,7 @@ function flipCard() {
 
 // Function below creates a new game board
 function createBoard() {
+  shuffle();
   for (var i = 0; i < cards.length; i++){
     var cardElement = document.createElement('img');
     cardElement.setAttribute('src', 'images/back.png');
@@ -82,6 +83,15 @@ function resetCards() {
   }
   createBoard();
 };
+
+function shuffle() {
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    return cards;
+};
+
 function updateScore() {
   document.getElementById('games-won').innerHTML = gamesWon;
   document.getElementById('games-lost').innerHTML = gamesLost;
